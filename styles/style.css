@@ -165,10 +165,10 @@ main .pictures-carousel .carousel-inner .img-block {
   margin: 4px;
 }
 main .pictures-carousel .carousel-control-next-icon {
-  background-image: url("images/icon-carousel-right.png");
+  background-image: url('../images/icon-carousel-right.png');
 }
 main .pictures-carousel .carousel-control-prev-icon {
-  background-image: url("images/icon-carousel-left.png");
+  background-image: url('../images/icon-carousel-left.png');
 }
 main .b-sections,
 main .b-projects {
