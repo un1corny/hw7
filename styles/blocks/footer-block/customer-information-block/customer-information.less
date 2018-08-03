@@ -1,0 +1,28 @@
+.b-customer-information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+  grid-column-gap: 20px;
+  &_style {
+    padding-bottom: 20px;
+  }
+  &_h3 {
+    text-transform: uppercase;
+    color: #666666;
+    display: block;
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .b-customer-information {
+    grid-row-gap: 10px;
+    &_h3 {
+      margin: 10px 0;
+    }
+  }
+}
+
+@import "_contacts";
+@import "_quick-links";
+@import "_from-blog";
+@import "_newsletter";

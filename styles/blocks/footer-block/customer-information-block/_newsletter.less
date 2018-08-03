@@ -1,0 +1,29 @@
+.b-customer-information__form {
+  display: flex;
+  flex-direction: column;
+  &_input {
+    border-radius: 4px;
+    max-width: 500px;
+    height: 40px;
+    min-width: 225px;
+    background-color: rgb(34, 34, 34);
+    padding: 5px;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  &_newsletter-button {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: center;
+    padding: 5px;
+    margin-top: 10px;
+    color: @green-elem-color;
+    background-color: rgb(34, 34, 34);
+    border-radius: 4px;
+    max-width: 75px;
+    &:hover {
+      color: #00acee;
+    }
+  }
+}

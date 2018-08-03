@@ -1,0 +1,61 @@
+.b-projects {
+  background-color: @base-bckgr-color;
+  &_grid-style {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__img-wrap {
+    width: 208px;
+    height: 138px;
+    &_style {
+      border: 1px solid lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+  &__img {
+    width: 200px;
+    height: 130px;
+    &:hover {
+      opacity: .2;
+    }
+  }
+
+  &__text {
+    &_h4,
+    &_p {
+      padding-top: 20px;
+    }
+    &_link-style {
+      margin-left: 50%;
+      color: @green-elem-color;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .b-projects {
+    &__img-wrap,
+    &__img {
+      display: none
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .b-projects {
+    &_grid-style {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      grid-row-gap: 10px;
+
+    }
+  }
+}

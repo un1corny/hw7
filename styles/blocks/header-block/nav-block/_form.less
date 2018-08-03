@@ -1,0 +1,27 @@
+.form-inline {
+  justify-content: center;
+  .form-control {
+    height: 33px;
+    color: #7f7f7f;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+  }
+  .btn-outline-success {
+    background-color: white;
+    border-left: 1px solid @dark-bckgr-color;
+    border-radius: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: -10px;
+    &:hover {
+      color: @dark-font-color
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .form-inline {
+    margin: 0 auto;
+  }
+}

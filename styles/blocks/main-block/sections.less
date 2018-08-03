@@ -1,0 +1,33 @@
+.b-sections {
+  background-color: @base-bckgr-color;
+  &_grid-style {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgray;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+  &__text {
+
+    &_h3,
+    &_p {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .b-sections {
+    &_grid-style {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
